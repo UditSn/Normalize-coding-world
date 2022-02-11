@@ -1,0 +1,12 @@
+<div>
+    <h2>Top Performers</h2>
+    <div>
+        <ul>
+            <% for(users of rank){ %>
+                <li><p><a href="/users/<%= users.user.email %>"><%= users.user.name %></a></p>
+                    <small><%= users.rating %></small>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+</div>
